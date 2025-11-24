@@ -13,7 +13,7 @@ const corsOptions = {
     origin: [
         'http://localhost:3000',      // Tu frontend local
         'https://tu-proyecto.vercel.app', // Tu frontend en producción (Cámbialo cuando despliegues)
-        'https://frontend-marketplace.vercel.app'
+        'https://dawa-lab-15-campos-erik2.vercel.app'
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
