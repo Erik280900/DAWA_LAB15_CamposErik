@@ -12,10 +12,12 @@ const app = express();
 const corsOptions = {
     origin: [
         'http://localhost:3000',      // Tu frontend local
-        'https://tu-proyecto.vercel.app' // Tu frontend en producción (Cámbialo cuando despliegues)
+        'https://tu-proyecto.vercel.app', // Tu frontend en producción (Cámbialo cuando despliegues)
+        'https://frontend-marketplace.vercel.app'
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true
 };
 
 app.use(cors(corsOptions));
